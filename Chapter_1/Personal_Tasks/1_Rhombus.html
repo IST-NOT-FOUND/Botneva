@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<title>Дополнительное задание 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<canvas id="canvas3D" width="700" height="600">Ваш браузер не поддерживает элемент canvas
+</canvas>
+<div id="buttons-wrapper">
+    <button id="changeColorButton" class="btn-success">
+    Сменить цвета фона и ромба!
+    </button>
+</div>
+
+  <script id="shader-fs" type="x-shader/x-fragment">
+    varying highp vec4 vColor;
+    void main(void) {
+      gl_FragColor = vColor;
+    }
+  </script>
+
+  <script id="shader-vs" type="x-shader/x-vertex">
+    attribute vec3 aVertexPosition;
+    attribute vec3 aVertexColor;
+    varying highp vec4 vColor;
+    void main(void) {
+        gl_Position = vec4(aVertexPosition, 1.0);
+        vColor = vec4(aVertexColor, 1.0);
+    }
+</script>
+<script src="C:\Users\JuliaJulialia\Documents\CGG-Botneva\js\PersonalTasks\1_Rhombus.js"></script>
+</body>
+</html>
