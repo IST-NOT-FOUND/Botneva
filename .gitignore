@@ -2,4 +2,9 @@ js/three*.js
 
 css/bootstrap*.css
 
+js/bootstrap.js
+
+js/bootstrap.min.js
+
 gl-matrix-min.js
+/nbproject/private/
